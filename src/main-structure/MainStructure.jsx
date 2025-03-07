@@ -3,6 +3,7 @@ import Hamburger from "../components/Hamburger/Hamburger";
 import ThemeToggleButton from "../components/ThemeToggleButton/ThemeToggleButton";
 import folderStructure from "../utilities/folderStructure";
 import Explorer from "../components/Explorer/Explorer";
+import TabBar from "../components/TabBar/TabBar";
 
 export default function MainStructure() {
   return (
@@ -27,7 +28,7 @@ export default function MainStructure() {
         </div>
       </div>
       <div className="editor-container">
-        <div className="tab-bar"></div>
+        <TabBar />
       </div>
     </div>
   );

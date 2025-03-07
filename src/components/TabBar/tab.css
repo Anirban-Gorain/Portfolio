@@ -1,0 +1,79 @@
+.tab-container {
+  height: 30px;
+  background: var(--hard-dark-background);
+  min-width: 100px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.tab-container .file-icon-section {
+  aspect-ratio: 1 / 1;
+  height: 20px;
+  color: var(--file-name-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-container .file-name-section {
+  width: fit-content;
+  flex-grow: 1;
+  padding: 1px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-container .file-name-section .file-name {
+  width: fit-content;
+  flex-grow: 1;
+  padding: 1px 5px;
+  color: var(--file-name-color);
+  font-style: italic;
+}
+
+.tab-container .close-button-section {
+  aspect-ratio: 1 / 1;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.tab-container .close-button-section:hover {
+  background: var(--medium-dark-background);
+}
+
+.tab-container .close-button-section .close {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.tab-container .close-button-section .close .line {
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background: #fff;
+}
+
+.line.line-1 {
+  transform: rotate(45deg);
+}
+
+.line.line-2 {
+  transform: rotate(-45deg);
+}

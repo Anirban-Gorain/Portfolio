@@ -18,6 +18,7 @@
   --file-explorer-icon-color: #949a96;
   --file-explorer-color: #fff;
   --file-explorer-hover-background-color: rgb(66, 65, 65);
+  --file-name-color: #e0e0e0;
 }
 
 .roboto-section-heading {
@@ -29,6 +30,12 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+.mont-file-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .hidden {

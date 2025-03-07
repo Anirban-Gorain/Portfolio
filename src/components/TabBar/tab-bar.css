@@ -1,0 +1,14 @@
+.tab-bar-container {
+  width: 100%;
+  height: 40px;
+  background: var(--easy-dark-background);
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  column-gap: 5px;
+  padding: 0px 10px;
+}
+
+.tab-bar-container::-webkit-scrollbar {
+  display: none;
+}
