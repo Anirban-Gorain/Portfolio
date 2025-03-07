@@ -1,0 +1,28 @@
+.hamburger-container {
+  aspect-ratio: 1 / 1;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  row-gap: 5px;
+  position: relative;
+}
+
+.hamburger-container .line {
+  width: 60%;
+  height: 3px;
+  background-color: var(--hamburger-line-color);
+  transition: transform 0.3s ease;
+}
+
+.line.cross-1 {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.line.cross-2 {
+  position: absolute;
+  transform: rotate(-45deg);
+}

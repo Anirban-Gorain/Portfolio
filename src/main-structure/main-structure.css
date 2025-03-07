@@ -1,0 +1,74 @@
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+/* menu-bar */
+
+.app-container .menu-bar {
+  background-color: var(--easy-dark-background);
+  width: 50px;
+}
+
+.app-container .menu-bar .menu-section {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* background: rgb(48, 46, 46); */
+}
+
+.app-container .menu-bar .app-logo-section {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container .menu-bar .app-logo-section img {
+  aspect-ratio: 1 / 1;
+  width: 27px;
+  margin-bottom: 8px;
+}
+
+.app-container .menu-bar .hamburger-button-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container .menu-bar .theme-toggle-button-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* side-bar */
+
+.app-container .file-explorer-section {
+  background-color: var(--medium-dark-background);
+  width: 300px;
+  overflow-y: auto;
+}
+
+.app-container .file-explorer-section .file-explorer {
+  padding-left: 10px;
+}
+
+.app-container .file-explorer-section .file-explorer-header {
+  /* background-color: tomato; */
+  width: 100%;
+  aspect-ratio: 1 / 0.2;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  font-size: 16px;
+  color: var(--heading-color);
+}
+
+/* editor-container */
+
+.app-container .editor-container {
+  background-color: var(--hard-dark-background);
+  flex-grow: 1;
+}

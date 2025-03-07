@@ -1,7 +1,9 @@
+import MainStructure from "./main-structure/MainStructure";
+
 function App() {
   return (
     <>
-      <h1>Welcome</h1>
+      <MainStructure />
     </>
   );
 }

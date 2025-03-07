@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --hard-dark-background: rgb(27, 27, 27);
+  --heading-color: rgb(205, 205, 205);
+  --icon-color: rgb(205, 205, 205);
+  --medium-dark-background: rgb(41, 41, 41);
+  --easy-dark-background: rgb(54, 54, 54);
+  --hamburger-line-color: #fff;
+  --theme-button-background: #fff;
+  --theme-button-color: #000000;
+  --file-explorer-left-border: #949a96;
+  --file-explorer-icon-color: #949a96;
+  --file-explorer-color: #fff;
+  --file-explorer-hover-background-color: rgb(66, 65, 65);
+}
+
+.roboto-section-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.roboto-font-filer-explore-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Copied code */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d;
+}

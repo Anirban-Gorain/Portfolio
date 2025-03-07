@@ -1,0 +1,58 @@
+.folder-container {
+  border-left: 1px solid var(--file-explorer-left-border);
+  margin-top: 0px;
+  color: var(--file-explorer-color);
+  overflow: hidden;
+  margin-top: 8px;
+  transition: all 0.1s ease;
+}
+
+.folder-container .explorer-icon-color {
+  color: var(--file-explorer-icon-color);
+}
+
+.folder-container .folder-container-header {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: all 0.1s ease;
+}
+
+.folder-container .folder-container-header:hover {
+  background-color: var(--file-explorer-hover-background-color);
+}
+
+.folder-container .folder-container-header span {
+  display: flex;
+  column-gap: 5px;
+}
+
+.folder {
+  overflow: hidden;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.close-folder {
+  max-height: 20px;
+}
+
+.open-folder {
+  max-height: 1500px;
+}
+
+.file {
+  margin-left: 10px;
+  font-weight: 300;
+  font-style: italic;
+  cursor: pointer;
+  margin-top: 3px;
+  padding: 4px;
+  transition: all 0.1s ease;
+}
+
+.file:hover {
+  background-color: var(--file-explorer-hover-background-color);
+}
