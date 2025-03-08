@@ -79,4 +79,5 @@
 .app-container .editor-container {
   background-color: var(--hard-dark-background);
   width: calc(100%);
+  overflow-x: hidden;
 }

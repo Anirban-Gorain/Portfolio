@@ -4,6 +4,28 @@ import { capitalize } from "../../utilities/stringUtilities";
 import { FaFolderOpen } from "react-icons/fa6";
 import { FaFolderClosed } from "react-icons/fa6";
 import { FaFile } from "react-icons/fa";
+import { useTabContext } from "../../contexts/tabBarContext";
+
+const File = memo(({ name }) => {
+  console.log(name + " File is rerendering");
+
+  const setTabs = useTabContext()[1];
+
+  function fileClickHandler(file) {
+    setTabs((tabs) => {
+      return tabs.includes(file) ? tabs : [...tabs, file];
+    });
+  }
+
+  return (
+    <div key={name} className="file" onClick={() => fileClickHandler(name)}>
+      <span className="explorer-icon-color">
+        <FaFile />
+      </span>{" "}
+      {name}
+    </div>
+  );
+});
 
 const Explorer = ({ tree }) => {
   if (!tree) {
@@ -47,16 +69,7 @@ const Explorer = ({ tree }) => {
             </div>
           );
         } else {
-          return (
-            <div key={child.name} className="file">
-              {
-                <span className="explorer-icon-color">
-                  <FaFile />{" "}
-                </span>
-              }{" "}
-              {name}
-            </div>
-          );
+          return <File name={name} />;
         }
       })}
     </>

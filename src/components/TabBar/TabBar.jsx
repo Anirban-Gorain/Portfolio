@@ -1,3 +1,4 @@
+import { useTabContext } from "../../contexts/tabBarContext";
 import Tab from "./Tab";
 import "./tab-bar.css";
 import { memo } from "react";
@@ -5,10 +6,12 @@ import { memo } from "react";
 const TabBar = () => {
   console.log("TabBar rerendering....");
 
+  const [tabs, _] = useTabContext();
+
   return (
     <div className="tab-bar-container">
-      {new Array(5).fill().map((_, __) => (
-        <Tab key={__} />
+      {tabs.map((fileName, i) => (
+        <Tab key={i} fileName={fileName} />
       ))}
     </div>
   );
