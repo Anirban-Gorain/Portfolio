@@ -1,3 +1,4 @@
+import { LiaLaptopCodeSolid } from "react-icons/lia";
 import "./main-structure.css";
 import Hamburger from "../components/Hamburger/Hamburger";
 import ThemeToggleButton from "../components/ThemeToggleButton/ThemeToggleButton";
@@ -15,7 +16,7 @@ export default function MainStructure() {
     <div className="app-container">
       <div className="menu-bar">
         <div className="menu-section app-logo-section">
-          <img src="../../public/laptop-code-solid.svg" />
+          <LiaLaptopCodeSolid />
         </div>
         <div className="menu-section hamburger-button-section">
           <Hamburger

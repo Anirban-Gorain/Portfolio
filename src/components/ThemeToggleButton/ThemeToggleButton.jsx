@@ -4,25 +4,26 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { memo } from "react";
 
-const ThemeToggleButton = ({ onChange }) => {
-  const [theme, setTheme] = useState({ theme: "dark" });
+const ThemeToggleButton = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   console.log("ThemeToggleButton rerendering....");
 
   useEffect(() => {
-    if (onChange) onChange(theme);
-  }, [theme.theme]);
+    document.documentElement.setAttribute(
+      "data-theme",
+      `${isDarkMode ? "light" : "dark"}`
+    );
+  }, [isDarkMode]);
 
   function themeChangeHandler() {
-    setTheme((state) =>
-      state.theme === "dark" ? { theme: "light" } : { theme: "dark" }
-    );
+    setIsDarkMode((mode) => !mode);
   }
 
   return (
     <div className="toggle-button-container">
       <button onClick={themeChangeHandler}>
-        {theme.theme == "dark" ? <MdLightMode /> : <MdOutlineDarkMode />}
+        {isDarkMode == true ? <MdLightMode /> : <MdOutlineDarkMode />}
       </button>
     </div>
   );

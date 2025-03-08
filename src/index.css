@@ -5,7 +5,23 @@
   user-select: none;
 }
 
-:root {
+[data-theme="light"] {
+  --hard-dark-background: rgb(240, 240, 240);
+  --heading-color: rgb(50, 50, 50);
+  --icon-color: rgb(80, 80, 80);
+  --medium-dark-background: rgb(230, 230, 230);
+  --easy-dark-background: rgb(245, 245, 245);
+  --hamburger-line-color: #000;
+  --theme-button-background: #000;
+  --theme-button-color: #fff;
+  --file-explorer-left-border: #ccc;
+  --file-explorer-icon-color: #555;
+  --file-explorer-color: #000;
+  --file-explorer-hover-background-color: rgb(220, 220, 220);
+  --file-name-color: #333;
+}
+
+[data-theme="dark"] {
   --hard-dark-background: rgb(27, 27, 27);
   --heading-color: rgb(205, 205, 205);
   --icon-color: rgb(205, 205, 205);

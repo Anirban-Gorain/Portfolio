@@ -16,7 +16,6 @@
 .app-container .menu-bar .menu-section {
   width: 100%;
   aspect-ratio: 1 / 1;
-  /* background: rgb(48, 46, 46); */
 }
 
 .app-container .menu-bar .app-logo-section {
@@ -24,10 +23,10 @@
   justify-content: center;
 }
 
-.app-container .menu-bar .app-logo-section img {
-  aspect-ratio: 1 / 1;
-  width: 27px;
-  margin-bottom: 8px;
+.app-container .menu-bar .app-logo-section {
+  font-size: 30px;
+  padding-top: 15px;
+  color: var(--icon-color);
 }
 
 .app-container .menu-bar .hamburger-button-section {
