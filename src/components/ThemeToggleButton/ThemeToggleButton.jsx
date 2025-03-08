@@ -2,9 +2,12 @@ import "./theme-toggle-button.css";
 import { useState, useEffect } from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import { memo } from "react";
 
-export default function ThemeToggleButton({ onChange }) {
+const ThemeToggleButton = ({ onChange }) => {
   const [theme, setTheme] = useState({ theme: "dark" });
+
+  console.log("ThemeToggleButton rerendering....");
 
   useEffect(() => {
     if (onChange) onChange(theme);
@@ -23,4 +26,6 @@ export default function ThemeToggleButton({ onChange }) {
       </button>
     </div>
   );
-}
+};
+
+export default memo(ThemeToggleButton);

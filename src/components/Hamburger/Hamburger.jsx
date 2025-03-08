@@ -1,30 +1,15 @@
 import "./hamburger.css";
-import { useState, useEffect } from "react";
 
-export default function Hamburger({ onChange }) {
-  const [hamburgerState, setHamburgerState] = useState({
-    isHamburgerOpen: true,
-  });
-
+export default function Hamburger({ isHamburgerOpen, setIsHamburgerOpen }) {
   function handleChange() {
-    setHamburgerState((state) => ({ isHamburgerOpen: !state.isHamburgerOpen }));
+    setIsHamburgerOpen((state) => !state);
   }
-
-  useEffect(() => {
-    if (onChange) onChange(hamburgerState);
-  }, [hamburgerState.isHamburgerOpen]);
 
   return (
     <div className="hamburger-container" onClick={handleChange}>
-      <div
-        className={`line ${hamburgerState.isHamburgerOpen ? "cross-1" : ""}`}
-      ></div>
-      <div
-        className={`line ${hamburgerState.isHamburgerOpen ? "hidden" : ""}`}
-      ></div>
-      <div
-        className={`line ${hamburgerState.isHamburgerOpen ? "cross-2" : ""}`}
-      ></div>
+      <div className={`line ${isHamburgerOpen ? "cross-1" : ""}`}></div>
+      <div className={`line ${isHamburgerOpen ? "hidden" : ""}`}></div>
+      <div className={`line ${isHamburgerOpen ? "cross-2" : ""}`}></div>
     </div>
   );
 }

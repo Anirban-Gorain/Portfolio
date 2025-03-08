@@ -1,14 +1,16 @@
 import "./explorer.css";
-import { useState } from "react";
+import { useState, memo } from "react";
 import { capitalize } from "../../utilities/stringUtilities";
 import { FaFolderOpen } from "react-icons/fa6";
 import { FaFolderClosed } from "react-icons/fa6";
 import { FaFile } from "react-icons/fa";
 
-export default function Explorer({ tree }) {
+const Explorer = ({ tree }) => {
   if (!tree) {
     return;
   }
+
+  console.log("Explorer rerendering....");
 
   return (
     <>
@@ -59,4 +61,6 @@ export default function Explorer({ tree }) {
       })}
     </>
   );
-}
+};
+
+export default memo(Explorer);

@@ -4,8 +4,13 @@ import ThemeToggleButton from "../components/ThemeToggleButton/ThemeToggleButton
 import folderStructure from "../utilities/folderStructure";
 import Explorer from "../components/Explorer/Explorer";
 import TabBar from "../components/TabBar/TabBar";
+import { useState } from "react";
 
 export default function MainStructure() {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(true);
+
+  console.log(isHamburgerOpen);
+
   return (
     <div className="app-container">
       <div className="menu-bar">
@@ -13,13 +18,20 @@ export default function MainStructure() {
           <img src="../../public/laptop-code-solid.svg" />
         </div>
         <div className="menu-section hamburger-button-section">
-          <Hamburger onChange={(state) => console.log(state)} />
+          <Hamburger
+            isHamburgerOpen={isHamburgerOpen}
+            setIsHamburgerOpen={setIsHamburgerOpen}
+          />
         </div>
         <div className="menu-section theme-toggle-button-section">
-          <ThemeToggleButton onChange={(state) => console.log(state)} />
+          <ThemeToggleButton />
         </div>
       </div>
-      <div className="file-explorer-section">
+      <div
+        className={`file-explorer-section ${
+          isHamburgerOpen ? "" : "hide-explorer"
+        }`}
+      >
         <div className="file-explorer-header">
           <span className="roboto-section-heading">Explorer</span>
         </div>

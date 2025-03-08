@@ -10,6 +10,7 @@
 .app-container .menu-bar {
   background-color: var(--easy-dark-background);
   width: 50px;
+  flex-shrink: 0;
 }
 
 .app-container .menu-bar .menu-section {
@@ -43,14 +44,20 @@
   align-items: center;
 }
 
-/* side-bar */
+/* explorer-section */
 
 .app-container .file-explorer-section {
   background-color: var(--medium-dark-background);
-  width: 250px;
+  width: 300px;
   overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.1s ease;
+  flex-shrink: 0;
 }
 
+.app-container .hide-explorer {
+  width: 0;
+}
 .app-container .file-explorer-section .file-explorer {
   padding-left: 10px;
 }
@@ -72,5 +79,5 @@
 
 .app-container .editor-container {
   background-color: var(--hard-dark-background);
-  width: calc(100% - 300px);
+  width: calc(100%);
 }
