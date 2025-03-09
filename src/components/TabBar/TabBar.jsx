@@ -8,11 +8,6 @@ const TabBar = () => {
   // console.log("TabBar rerendering....");
 
   const [tabs, _] = useTabContext();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (tabs.length === 0) navigate("/anirban-gorain");
-  }, [tabs]);
 
   return (
     <div className="tab-bar-container">
