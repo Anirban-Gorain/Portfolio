@@ -4,7 +4,7 @@ import "./tab-bar.css";
 import { memo } from "react";
 
 const TabBar = () => {
-  console.log("TabBar rerendering....");
+  // console.log("TabBar rerendering....");
 
   const [tabs, _] = useTabContext();
 

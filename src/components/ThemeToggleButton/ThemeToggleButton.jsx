@@ -12,7 +12,7 @@ const ThemeToggleButton = () => {
   useEffect(() => {
     document.documentElement.setAttribute(
       "data-theme",
-      `${isDarkMode ? "light" : "dark"}`
+      `${isDarkMode ? "dark" : "light"}`
     );
   }, [isDarkMode]);
 

@@ -1,18 +1,19 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect, useRef } from "react";
 
 const TabBarContext = createContext();
 
 export function TabBarContextProvider({ children }) {
   const [tabs, setTabs] = useState([]);
+  const currentTab = useRef(0);
 
   return (
-    <TabBarContext.Provider value={{ tabs, setTabs }}>
+    <TabBarContext.Provider value={{ tabs, setTabs, currentTab }}>
       {children}
     </TabBarContext.Provider>
   );
 }
 
 export function useTabContext() {
-  const { tabs, setTabs } = useContext(TabBarContext);
-  return [tabs, setTabs];
+  const { tabs, setTabs, currentTab } = useContext(TabBarContext);
+  return [tabs, setTabs, currentTab];
 }

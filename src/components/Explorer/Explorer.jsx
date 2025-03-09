@@ -1,5 +1,5 @@
 import "./explorer.css";
-import { useState, memo } from "react";
+import { useState, memo, useEffect } from "react";
 import { capitalize } from "../../utilities/stringUtilities";
 import { FaFolderOpen } from "react-icons/fa6";
 import { FaFolderClosed } from "react-icons/fa6";
@@ -7,14 +7,17 @@ import { FaFile } from "react-icons/fa";
 import { useTabContext } from "../../contexts/tabBarContext";
 
 const File = memo(({ name }) => {
-  console.log(name + " File is rerendering");
+  // console.log(name + " File is rerendering");
 
-  const setTabs = useTabContext()[1];
+  const [tabs, setTabs, currentTab] = useTabContext();
 
   function fileClickHandler(file) {
-    setTabs((tabs) => {
-      return tabs.includes(file) ? tabs : [...tabs, file];
-    });
+    if (tabs.includes(file)) return;
+
+    const temp = [...tabs];
+    currentTab.current++;
+    temp.splice(currentTab.current, 0, file);
+    setTabs(temp);
   }
 
   return (
@@ -32,7 +35,7 @@ const Explorer = ({ tree }) => {
     return;
   }
 
-  console.log("Explorer rerendering....");
+  // console.log("Explorer rerendering....");
 
   return (
     <>
