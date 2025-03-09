@@ -1,37 +1,35 @@
 import { useTabContext } from "../../contexts/tabBarContext";
 import "./tab.css";
 import { BsEyeglasses } from "react-icons/bs";
-import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Tab({ fileName }) {
-  const [tabs, setTabs, currentTab] = useTabContext();
-  const refOfTheFileName = useRef();
+  const [tabs, setTabs] = useTabContext();
+  const navigate = useNavigate();
 
-  function tabCloseHandler() {
+  function tabCloseHandler(e) {
+    e.stopPropagation();
+
     const tempTabs = [...tabs];
-    const indOfTheTabToBeClosed = tempTabs.findIndex((fn) => fn === fileName);
+    const indOfTheTabToBeClosed = tempTabs.findIndex(
+      (fn) => fn.file === fileName
+    );
     tempTabs.splice(indOfTheTabToBeClosed, 1);
-    setTabs(tempTabs);
 
-    if (currentTab.current > indOfTheTabToBeClosed) {
-      // No need to change
-    } else if (
-      currentTab.current === indOfTheTabToBeClosed &&
-      tabs.length - indOfTheTabToBeClosed > 0
-    ) {
-      // No need to change
-    } else if (
-      currentTab.current === indOfTheTabToBeClosed &&
-      tabs.length - indOfTheTabToBeClosed === 0
-    ) {
-      currentTab.current--;
+    if (indOfTheTabToBeClosed == 0 && tabs.length > 1) {
+      navigate(tabs[1].route);
+    } else if (tabs.length == 1) {
+      navigate("/anirban-gorain");
+    } else {
+      navigate(tabs[0].route);
     }
+
+    setTabs(tempTabs);
   }
 
   function tabClickHandler(e) {
-    const clickedTabsFileName = refOfTheFileName.current.innerText;
-    const clickedTabIndex = tabs.findIndex((fn) => clickedTabsFileName == fn);
-    currentTab.current = clickedTabIndex;
+    const clickedTabIndex = tabs.findIndex((obj) => fileName == obj.file);
+    navigate(tabs[clickedTabIndex].route);
   }
 
   return (
@@ -40,9 +38,7 @@ export default function Tab({ fileName }) {
         <BsEyeglasses />
       </div>
       <div className="file-name-section">
-        <span className="file-name mont-file-heading" ref={refOfTheFileName}>
-          {fileName}
-        </span>
+        <span className="file-name mont-file-heading">{fileName}</span>
       </div>
       <div className="close-button-section" onClick={tabCloseHandler}>
         <button className="close">

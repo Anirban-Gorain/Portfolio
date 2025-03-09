@@ -1,10 +1,11 @@
-import MainStructure from "./main-structure/MainStructure";
 import { TabBarContextProvider } from "./contexts/tabBarContext";
+import AppRoutes from "./Routes/Routes";
+import "./index.css";
 
 function App() {
   return (
     <TabBarContextProvider>
-      <MainStructure />
+      <AppRoutes />
     </TabBarContextProvider>
   );
 }

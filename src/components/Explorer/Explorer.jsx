@@ -5,23 +5,29 @@ import { FaFolderOpen } from "react-icons/fa6";
 import { FaFolderClosed } from "react-icons/fa6";
 import { FaFile } from "react-icons/fa";
 import { useTabContext } from "../../contexts/tabBarContext";
+import { useNavigate } from "react-router-dom";
 
-const File = memo(({ name }) => {
+const File = memo(({ name, route }) => {
   // console.log(name + " File is rerendering");
 
-  const [tabs, setTabs, currentTab] = useTabContext();
+  const [tabs, setTabs] = useTabContext();
+  const navigate = useNavigate();
 
-  function fileClickHandler(file) {
-    if (tabs.includes(file)) return;
+  function fileClickHandler(file, route) {
+    navigate(route);
 
-    const temp = [...tabs];
-    currentTab.current++;
-    temp.splice(currentTab.current, 0, file);
+    if (tabs.findIndex((obj) => obj.file === file) != -1) return;
+
+    const temp = [...tabs, { file, route }];
     setTabs(temp);
   }
 
   return (
-    <div key={name} className="file" onClick={() => fileClickHandler(name)}>
+    <div
+      key={name}
+      className="file"
+      onClick={() => fileClickHandler(name, route)}
+    >
       <span className="explorer-icon-color">
         <FaFile />
       </span>{" "}
@@ -72,7 +78,7 @@ const Explorer = ({ tree }) => {
             </div>
           );
         } else {
-          return <File name={name} />;
+          return <File key={ind} name={name} route={child.route} />;
         }
       })}
     </>

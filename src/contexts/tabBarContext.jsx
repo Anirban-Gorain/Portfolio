@@ -4,16 +4,15 @@ const TabBarContext = createContext();
 
 export function TabBarContextProvider({ children }) {
   const [tabs, setTabs] = useState([]);
-  const currentTab = useRef(0);
 
   return (
-    <TabBarContext.Provider value={{ tabs, setTabs, currentTab }}>
+    <TabBarContext.Provider value={{ tabs, setTabs }}>
       {children}
     </TabBarContext.Provider>
   );
 }
 
 export function useTabContext() {
-  const { tabs, setTabs, currentTab } = useContext(TabBarContext);
-  return [tabs, setTabs, currentTab];
+  const { tabs, setTabs } = useContext(TabBarContext);
+  return [tabs, setTabs];
 }

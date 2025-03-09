@@ -6,6 +6,7 @@ const folderStructure = [
       {
         type: "file",
         name: "instruction.txt",
+        route: "/anirban-gorain/instruction.txt",
         children: null,
       },
       {
@@ -15,6 +16,7 @@ const folderStructure = [
           {
             type: "file",
             name: "resume.anirban.pdf",
+            route: "/anirban-gorain/resume/resume.anirban.pdf",
             children: null,
           },
         ],
@@ -27,6 +29,7 @@ const folderStructure = [
           {
             type: "file",
             name: "about.anirban",
+            route: "/anirban-gorain/about/about.anirban",
             children: null,
           },
         ],
@@ -38,6 +41,7 @@ const folderStructure = [
           {
             type: "file",
             name: "education.anirban",
+            route: "/anirban-gorain/education/education.anirban",
             children: null,
           },
         ],
@@ -49,6 +53,7 @@ const folderStructure = [
           {
             type: "file",
             name: "achievements.anirban",
+            route: "/anirban-gorain/achievements/achievements.anirban",
             children: null,
           },
         ],
@@ -60,6 +65,7 @@ const folderStructure = [
           {
             type: "file",
             name: "experience.anirban",
+            route: "/anirban-gorain/experience/experience.anirban",
             children: null,
           },
         ],
@@ -75,6 +81,7 @@ const folderStructure = [
               {
                 type: "file",
                 name: "excan.project.anirban",
+                route: "/anirban-gorain/project/ex-can.project.anirban",
                 children: null,
               },
             ],
@@ -86,6 +93,7 @@ const folderStructure = [
               {
                 type: "file",
                 name: "glamour-galaxy.project.anirban",
+                route: "/anirban-gorain/project/glamour-galaxy.project.anirban",
                 children: null,
               },
             ],
@@ -97,6 +105,7 @@ const folderStructure = [
               {
                 type: "file",
                 name: "filmify.project.anirban",
+                route: "/anirban-gorain/project/filmify.project.anirban",
                 children: null,
               },
             ],
@@ -110,6 +119,7 @@ const folderStructure = [
           {
             type: "file",
             name: "skills.anirban",
+            route: "/anirban-gorain/skills/skills.anirban",
             children: null,
           },
         ],
@@ -121,6 +131,7 @@ const folderStructure = [
           {
             type: "file",
             name: "contact.anirban",
+            route: "/anirban-gorain/contact/contact.anirban",
             children: null,
           },
         ],
@@ -132,6 +143,7 @@ const folderStructure = [
           {
             type: "file",
             name: "testimonials.anirban",
+            route: "/anirban-gorain/testimonials/testimonials.anirban",
             children: null,
           },
         ],

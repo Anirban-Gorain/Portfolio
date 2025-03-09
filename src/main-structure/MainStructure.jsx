@@ -6,6 +6,7 @@ import folderStructure from "../utilities/folderStructure";
 import Explorer from "../components/Explorer/Explorer";
 import TabBar from "../components/TabBar/TabBar";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 export default function MainStructure() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(true);
@@ -42,6 +43,7 @@ export default function MainStructure() {
       </div>
       <div className="editor-container">
         <TabBar />
+        <Outlet />
       </div>
     </div>
   );
