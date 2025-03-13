@@ -81,4 +81,5 @@
   width: calc(100%);
   overflow-x: hidden;
   color: aliceblue;
+  overflow: hidden;
 }

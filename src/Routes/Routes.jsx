@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import MainStructure from "../main-structure/MainStructure";
+import Skills from "../pages/Skills/Skills";
 
 export default function AppRoutes() {
   return (
@@ -35,7 +36,7 @@ export default function AppRoutes() {
           path="project/filmify.project.anirban"
           element={<div>Project: Filmify</div>}
         ></Route>
-        <Route path="skills/skills.anirban" element={<div>Skills</div>}></Route>
+        <Route path="skills/skills.anirban" element={<Skills />}></Route>
         <Route
           path="contact/contact.anirban"
           element={<div>Contact</div>}
