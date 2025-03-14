@@ -5,8 +5,8 @@ const folderStructure = [
     children: [
       {
         type: "file",
-        name: "instruction.txt",
-        route: "/anirban-gorain/instruction.txt",
+        name: "introduction.anirban",
+        route: "/anirban-gorain/introduction.anirban",
         children: null,
       },
       {

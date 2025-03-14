@@ -82,4 +82,5 @@
   overflow-x: hidden;
   color: aliceblue;
   overflow: hidden;
+  user-select: text;
 }

@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import MainStructure from "../main-structure/MainStructure";
 import Skills from "../pages/Skills/Skills";
+import Introduction from "../pages/Introduction/Introduction";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/anirban-gorain" element={<MainStructure />}>
-        <Route path="instruction.txt" element={<div>Instruction</div>}></Route>
+        <Route path="introduction.anirban" element={<Introduction />}></Route>
         <Route
           path="resume/resume.anirban.pdf"
           element={<div>Resume</div>}

@@ -57,7 +57,7 @@ export default function Skills() {
   console.log(skillCards);
 
   return (
-    <div className="container">
+    <div className="skills-container">
       <div className="filter-section">
         {filters.map((filter) => (
           <FilterTab
