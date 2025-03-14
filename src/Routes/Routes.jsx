@@ -2,16 +2,14 @@ import { Route, Routes } from "react-router-dom";
 import MainStructure from "../main-structure/MainStructure";
 import Skills from "../pages/Skills/Skills";
 import Introduction from "../pages/Introduction/Introduction";
+import Resume from "../pages/Resume/Resume";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/anirban-gorain" element={<MainStructure />}>
         <Route path="introduction.anirban" element={<Introduction />}></Route>
-        <Route
-          path="resume/resume.anirban.pdf"
-          element={<div>Resume</div>}
-        ></Route>
+        <Route path="resume/resume.anirban.pdf" element={<Resume />}></Route>
         <Route path="about/about.anirban" element={<div>About</div>}></Route>
         <Route
           path="education/education.anirban"
