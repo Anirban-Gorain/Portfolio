@@ -3,6 +3,7 @@ import MainStructure from "../main-structure/MainStructure";
 import Skills from "../pages/Skills/Skills";
 import Introduction from "../pages/Introduction/Introduction";
 import Resume from "../pages/Resume/Resume";
+import Education from "../pages/Education/Education";
 
 export default function AppRoutes() {
   return (
@@ -10,10 +11,10 @@ export default function AppRoutes() {
       <Route path="/anirban-gorain" element={<MainStructure />}>
         <Route path="introduction.anirban" element={<Introduction />}></Route>
         <Route path="resume/resume.anirban.pdf" element={<Resume />}></Route>
-        <Route path="about/about.anirban" element={<div>About</div>}></Route>
+        {/* <Route path="about/about.anirban" element={<div>About</div>}></Route> */}
         <Route
           path="education/education.anirban"
-          element={<div>Education</div>}
+          element={<Education />}
         ></Route>
         <Route
           path="achievements/achievements.anirban"

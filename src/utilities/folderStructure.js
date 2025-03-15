@@ -22,18 +22,18 @@ const folderStructure = [
         ],
       },
 
-      {
-        type: "folder",
-        name: "About",
-        children: [
-          {
-            type: "file",
-            name: "about.anirban",
-            route: "/anirban-gorain/about/about.anirban",
-            children: null,
-          },
-        ],
-      },
+      // {
+      //   type: "folder",
+      //   name: "About",
+      //   children: [
+      //     {
+      //       type: "file",
+      //       name: "about.anirban",
+      //       route: "/anirban-gorain/about/about.anirban",
+      //       children: null,
+      //     },
+      //   ],
+      // },
       {
         type: "folder",
         name: "Education",
