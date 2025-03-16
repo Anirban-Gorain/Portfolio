@@ -16,6 +16,7 @@
 
 .introduction-container .left h1 {
   font-family: "Open Sans";
+  color: var(--heading-text-color);
 }
 
 .introduction-container .left h4 {
@@ -23,6 +24,7 @@
   font-weight: 100;
   font-size: 15px;
   display: flex;
+  color: var(--heading-text-color);
 }
 
 .introduction-container .right {
@@ -44,10 +46,11 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
 }
 
 .text-color {
-  color: bisque;
+  color: var(--name-text-color);
 }
 
 .right .image-frame {
@@ -61,7 +64,6 @@
   justify-content: center;
   overflow: hidden;
   background-color: var(--image-frame-bgc);
-
   transform: translate(100px, -100px);
   opacity: 0;
   animation: slideIn 1s ease-in-out forwards;

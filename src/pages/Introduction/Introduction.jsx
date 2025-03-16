@@ -5,8 +5,8 @@ export default function Introduction() {
     <div className="introduction-container">
       <div className="left ">
         <h1 className="">
-          Hello there I am <span className="text-color">Anirban Gorain</span>, I
-          am a Software Engineer from <span className="flag-text">India</span>
+          Hello there I am <span className="text-color">Anirban Gorain</span>, a
+          Software Engineer from <span className="flag-text">India</span>
         </h1>
         <h4>
           Explore different directories to uncover my projects, technical

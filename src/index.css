@@ -19,6 +19,11 @@
   --file-explorer-color: #000;
   --file-explorer-hover-background-color: rgb(220, 220, 220);
   --file-name-color: #333;
+  --heading-text-color: black;
+  --name-text-color: #0077ff;
+  --image-frame-bgc: #0077ff;
+  --project-heading-color: black;
+  --slider-button-color: rgb(0, 0, 0);
 }
 
 [data-theme="dark"] {
@@ -35,7 +40,12 @@
   --file-explorer-color: #fff;
   --file-explorer-hover-background-color: rgb(66, 65, 65);
   --file-name-color: #e0e0e0;
-  --image-frame-bgc: rgb(68, 66, 66);
+  --image-frame-bgc: #0077ff;
+  --heading-text-color: #fff;
+  --name-text-color: #0077ff;
+  --project-heading-color: rgb(255, 255, 255);
+  --slider-button-color: rgb(255, 255, 255);
+  --name-text-color: #0077ff;
 }
 
 .roboto-section-heading {
@@ -74,5 +84,5 @@
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #6d6d6d;
+  background: #3a3a3a;
 }

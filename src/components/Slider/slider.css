@@ -46,13 +46,13 @@
   cursor: pointer;
   font-size: 30px;
   background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  color: var(--slider-button-color);
+  border: 1px solid var(--slider-button-color);
   transition: all 0.3s;
 }
 
 .slider-container .controls .slider-button:hover {
-  background-color: gray;
+  background-color: #0077ff;
 }
 
 .slider-container .controls .slider-button.right {

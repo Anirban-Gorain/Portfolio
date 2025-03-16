@@ -6,6 +6,7 @@
   align-items: stretch;
   padding: 10px;
   font-family: "Open Sans";
+  color: var(--project-heading-color);
 }
 
 .project-container .left {
