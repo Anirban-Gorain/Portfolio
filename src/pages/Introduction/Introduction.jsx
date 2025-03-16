@@ -2,7 +2,7 @@ import "./introduction.css";
 
 export default function Introduction() {
   return (
-    <div className="container">
+    <div className="introduction-container">
       <div className="left ">
         <h1 className="">
           Hello there I am <span className="text-color">Anirban Gorain</span>, I

@@ -74,18 +74,18 @@ const folderStructure = [
         type: "folder",
         name: "Projects",
         children: [
-          {
-            type: "folder",
-            name: "ExCan",
-            children: [
-              {
-                type: "file",
-                name: "excan.project.anirban",
-                route: "/anirban-gorain/project/ex-can.project.anirban",
-                children: null,
-              },
-            ],
-          },
+          // {
+          //   type: "folder",
+          //   name: "ExCan",
+          //   children: [
+          //     {
+          //       type: "file",
+          //       name: "excan.project.anirban",
+          //       route: "/anirban-gorain/project/ex-can.project.anirban",
+          //       children: null,
+          //     },
+          //   ],
+          // },
           {
             type: "folder",
             name: "Glamour-Galaxy",

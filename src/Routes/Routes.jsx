@@ -4,6 +4,8 @@ import Skills from "../pages/Skills/Skills";
 import Introduction from "../pages/Introduction/Introduction";
 import Resume from "../pages/Resume/Resume";
 import Education from "../pages/Education/Education";
+import GlamourGalaxy from "../pages/GlamourGalaxy/GlamourGalaxy";
+import Filmify from "../pages/Filmify/Filmify";
 
 export default function AppRoutes() {
   return (
@@ -26,7 +28,7 @@ export default function AppRoutes() {
         ></Route>
         <Route
           path="project/glamour-galaxy.project.anirban"
-          element={<div>Project: Glamour-Galaxy</div>}
+          element={<GlamourGalaxy />}
         ></Route>
         <Route
           path="project/ex-can.project.anirban"
@@ -34,7 +36,7 @@ export default function AppRoutes() {
         ></Route>
         <Route
           path="project/filmify.project.anirban"
-          element={<div>Project: Filmify</div>}
+          element={<Filmify />}
         ></Route>
         <Route path="skills/skills.anirban" element={<Skills />}></Route>
         <Route

@@ -1,0 +1,9 @@
+.skill {
+  height: fit-content;
+  padding: 2px 8px;
+  width: fit-content;
+  border: 1.5px solid #007bff;
+  border-radius: 30px;
+  flex-shrink: 0;
+  color: #007bff;
+}
