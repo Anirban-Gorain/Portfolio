@@ -1,0 +1,22 @@
+.counter-container {
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.counter-container .count {
+  font-size: 25px;
+  font-weight: 500;
+  display: block;
+}
+.counter-container .subject {
+  width: 100px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}

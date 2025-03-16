@@ -14,6 +14,14 @@
   margin-top: 100px;
 }
 
+.introduction-container .left .attract-counters {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 5px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
 .introduction-container .left h1 {
   font-family: "Open Sans";
   color: var(--heading-text-color);

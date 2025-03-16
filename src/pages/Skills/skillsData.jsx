@@ -163,4 +163,6 @@ const skills = [
   },
 ];
 
-export { filters, skills };
+const skillsLength = skills.length;
+
+export { filters, skills, skillsLength };

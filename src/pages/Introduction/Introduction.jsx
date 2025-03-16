@@ -1,4 +1,6 @@
 import "./introduction.css";
+import AnimatedCounter from "../../components/AnimatedCounter/AnimatedCounter";
+import { skillsLength } from "../Skills/skillsData";
 
 export default function Introduction() {
   return (
@@ -12,6 +14,19 @@ export default function Introduction() {
           Explore different directories to uncover my projects, technical
           expertise, and professional journey.
         </h4>
+
+        <div className="attract-counters">
+          <AnimatedCounter
+            givenCount={3}
+            subject={"Projects personal developed"}
+          />
+          <AnimatedCounter givenCount={1} subject={"Year of experience"} />
+          <AnimatedCounter givenCount={450} subject={"DSA problems solved"} />
+          <AnimatedCounter
+            givenCount={skillsLength}
+            subject={"Technologies mastered"}
+          />
+        </div>
       </div>
       <div className="right">
         <div className="image-frame">
