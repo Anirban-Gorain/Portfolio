@@ -6,6 +6,7 @@ import Resume from "../pages/Resume/Resume";
 import Education from "../pages/Education/Education";
 import GlamourGalaxy from "../pages/GlamourGalaxy/GlamourGalaxy";
 import Filmify from "../pages/Filmify/Filmify";
+import Contact from "../pages/Contact/Contact";
 
 export default function AppRoutes() {
   return (
@@ -39,10 +40,7 @@ export default function AppRoutes() {
           element={<Filmify />}
         ></Route>
         <Route path="skills/skills.anirban" element={<Skills />}></Route>
-        <Route
-          path="contact/contact.anirban"
-          element={<div>Contact</div>}
-        ></Route>
+        <Route path="contact/contact.anirban" element={<Contact />}></Route>
         <Route
           path="testimonials/testimonials.anirban"
           element={<div>Testimonials</div>}

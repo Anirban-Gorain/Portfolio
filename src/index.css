@@ -24,6 +24,10 @@
   --image-frame-bgc: #0077ff;
   --project-heading-color: black;
   --slider-button-color: rgb(0, 0, 0);
+  --submit-button-background: rgb(255, 255, 255);
+  --submit-button-background-hover: rgb(158, 158, 158);
+  --submit-button-color: rgb(0, 0, 0);
+  --form-section-text-color: #000000;
 }
 
 [data-theme="dark"] {
@@ -46,6 +50,10 @@
   --project-heading-color: rgb(255, 255, 255);
   --slider-button-color: rgb(255, 255, 255);
   --name-text-color: #0077ff;
+  --submit-button-background: rgb(0, 0, 0);
+  --submit-button-background-hover: rgb(60, 60, 60);
+  --submit-button-color: rgb(255, 255, 255);
+  --form-section-text-color: #fff;
 }
 
 .roboto-section-heading {

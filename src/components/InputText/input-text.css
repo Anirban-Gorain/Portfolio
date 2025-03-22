@@ -1,0 +1,24 @@
+.input-text-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-text-section input {
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  font-family: "Open Sans";
+  border-radius: 2px;
+  border: 1.5px solid black;
+}
+
+.input-text-section .error {
+  font-family: "Open Sans";
+  font-style: italic;
+  color: red;
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 2px;
+  margin-top: 5px;
+}

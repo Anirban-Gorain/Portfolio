@@ -1,0 +1,88 @@
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  font-family: "Open Sans";
+}
+
+.form-container .left {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.form-container .left form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+}
+
+.submit-btn {
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1.5px solid var(--submit-button-color);
+  background-color: var(--submit-button-background);
+  color: var(--submit-button-color);
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--submit-button-background-hover);
+}
+
+.form-container .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-container .right .social-handles ul {
+  list-style: none;
+  list-style: none;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.form-container .right .contact-card {
+  display: flex;
+  align-items: center;
+}
+
+.form-container .right .contact-card .icon {
+  font-size: 20px;
+}
+
+.form-container .right .contact-card a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: var(--form-section-text-color);
+}
+
+.form-container .right .linkedin {
+  color: #0077b5;
+}
+
+.form-container .right .instagram {
+  color: #e4405f;
+}
+
+.form-container .right .facebook {
+  color: #1877f2;
+}
+
+.form-container .right .phone {
+  color: #25d366;
+}
+
+.form-container .right .email {
+  color: #d44638;
+}
