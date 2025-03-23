@@ -46,18 +46,18 @@ const folderStructure = [
           },
         ],
       },
-      {
-        type: "folder",
-        name: "Achievements",
-        children: [
-          {
-            type: "file",
-            name: "achievements.anirban",
-            route: "/anirban-gorain/achievements/achievements.anirban",
-            children: null,
-          },
-        ],
-      },
+      // {
+      //   type: "folder",
+      //   name: "Achievements",
+      //   children: [
+      //     {
+      //       type: "file",
+      //       name: "achievements.anirban",
+      //       route: "/anirban-gorain/achievements/achievements.anirban",
+      //       children: null,
+      //     },
+      //   ],
+      // },
       {
         type: "folder",
         name: "Experience",

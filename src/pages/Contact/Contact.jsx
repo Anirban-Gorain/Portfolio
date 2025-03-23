@@ -167,7 +167,12 @@ export default function Contact() {
                 <div className="icon linkedin">
                   <FaLinkedin />
                 </div>
-                <a href="">Linkedin</a>
+                <a
+                  href="https://www.linkedin.com/in/anirban-gorain"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
               </div>
             </li>
             <li>
@@ -175,7 +180,12 @@ export default function Contact() {
                 <div className="icon instagram">
                   <FaSquareInstagram />
                 </div>
-                <a href="">Instagram</a>
+                <a
+                  href="https://www.instagram.com/aniwritescode"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
               </div>
             </li>
             <li>
@@ -183,7 +193,12 @@ export default function Contact() {
                 <div className="icon facebook">
                   <FaFacebookF />
                 </div>
-                <a href="">Facebook</a>
+                <a
+                  href="https://www.facebook.com/anirban.gorain.73/"
+                  target="_blank"
+                >
+                  Facebook
+                </a>
               </div>
             </li>
           </ul>
