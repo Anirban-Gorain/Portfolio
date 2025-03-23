@@ -7,6 +7,7 @@ import Education from "../pages/Education/Education";
 import GlamourGalaxy from "../pages/GlamourGalaxy/GlamourGalaxy";
 import Filmify from "../pages/Filmify/Filmify";
 import Contact from "../pages/Contact/Contact";
+import Experience from "../pages/Experience/Experience";
 
 export default function AppRoutes() {
   return (
@@ -25,7 +26,7 @@ export default function AppRoutes() {
         ></Route>
         <Route
           path="experience/experience.anirban"
-          element={<div>Experience</div>}
+          element={<Experience />}
         ></Route>
         <Route
           path="project/glamour-galaxy.project.anirban"

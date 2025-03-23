@@ -1,0 +1,101 @@
+.experience-card-container {
+  width: 100%;
+  min-height: 250px;
+  /* background-color: blueviolet; */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  color: var(--experience-section-color);
+}
+
+.experience-card-container .line {
+  width: 5px;
+  height: 100%;
+  background: #0077ff;
+  position: relative;
+  flex-grow: 0;
+}
+
+.experience-card-container .line::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--experience-section-color);
+  top: -5px;
+  left: -3px;
+}
+
+.experience-card-container .experience-card-content {
+  width: 100%;
+  height: 100%;
+  /* background: palegreen; */
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.experience-card-container .experience-card-content .duration {
+  /* padding-left: 20px; */
+  color: var(--experience-section-color);
+  margin-top: -12px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.experience-card-container .experience-card-content .company {
+  display: flex;
+  align-items: center;
+}
+
+.experience-card-container .experience-card-content .company .logo {
+  width: 45px;
+  height: 45px;
+  background-color: var(--experience-section-color);
+  padding: 2px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.experience-card-container .experience-card-content .company .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.experience-card-container .experience-card-content .company .company-name {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.experience-card-container .experience-card-content .my-role {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.experience-card-container .heading {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.experience-card-container .experience-card-content .impact ul {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.experience-card-container .experience-card-content .impact ul li {
+  margin-bottom: 10px;
+}
+
+.experience-card-container .experience-card-content .tech-stack {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}

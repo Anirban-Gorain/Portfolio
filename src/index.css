@@ -28,6 +28,8 @@
   --submit-button-background-hover: rgb(158, 158, 158);
   --submit-button-color: rgb(0, 0, 0);
   --form-section-text-color: #000000;
+  --experience-section-color: black;
+  --counter-section-color: #000000;
 }
 
 [data-theme="dark"] {
@@ -54,6 +56,8 @@
   --submit-button-background-hover: rgb(60, 60, 60);
   --submit-button-color: rgb(255, 255, 255);
   --form-section-text-color: #fff;
+  --experience-section-color: #fff;
+  --counter-section-color: #fff;
 }
 
 .roboto-section-heading {
