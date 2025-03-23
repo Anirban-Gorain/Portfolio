@@ -136,18 +136,18 @@ const folderStructure = [
           },
         ],
       },
-      {
-        type: "folder",
-        name: "Testimonials",
-        children: [
-          {
-            type: "file",
-            name: "testimonials.anirban",
-            route: "/anirban-gorain/testimonials/testimonials.anirban",
-            children: null,
-          },
-        ],
-      },
+      // {
+      //   type: "folder",
+      //   name: "Testimonials",
+      //   children: [
+      //     {
+      //       type: "file",
+      //       name: "testimonials.anirban",
+      //       route: "/anirban-gorain/testimonials/testimonials.anirban",
+      //       children: null,
+      //     },
+      //   ],
+      // },
     ],
   },
 ];

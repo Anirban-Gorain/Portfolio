@@ -26,7 +26,7 @@ export default function Project({
             <li>
               <strong>{projectName}</strong> {projectDescription}
             </li>
-            <li>
+            <li className="left-heading">
               <strong>Key features:</strong>
               <ul>
                 {features.map((feature) => (

@@ -11,7 +11,6 @@
 
 .project-container .left {
   width: 40%;
-  /* background-color: rgb(72, 76, 75); */
 }
 
 .project-container .left .my-role-section {
@@ -27,6 +26,9 @@
   margin-bottom: 10px;
   display: inline-block;
 }
+.project-container .left .project-description .left-heading {
+  font-size: 16px;
+}
 
 .project-container .left .project-description ul {
   margin-left: 30px;
@@ -34,6 +36,7 @@
 
 .project-container .left .project-description ul li {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .project-container .left .project-description ul li ul {
