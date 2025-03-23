@@ -3,7 +3,14 @@ import { createContext, useState, useContext, useEffect, useRef } from "react";
 const TabBarContext = createContext();
 
 export function TabBarContextProvider({ children }) {
-  const [tabs, setTabs] = useState([]);
+  const [tabs, setTabs] = useState([
+    {
+      file: "Introduction.anirban",
+      route: "/anirban-gorain/introduction.anirban",
+    },
+  ]);
+
+  console.log(tabs);
 
   return (
     <TabBarContext.Provider value={{ tabs, setTabs }}>

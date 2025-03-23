@@ -11,8 +11,8 @@ export default function Introduction() {
           Software Engineer from <span className="flag-text">India</span>
         </h1>
         <h4>
-          Explore different directories to uncover my projects, technical
-          expertise, and professional journey.
+          Explore different folders on the left side to uncover my projects,
+          technical expertise, and professional journey.
         </h4>
 
         <div className="attract-counters">
